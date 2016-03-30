@@ -453,7 +453,7 @@ var FileSystem = function() {
         reply.err(0);
     };
 
-    this.create = function() {
+    this.create = function(context, parent, name, mode, fileInfo, reply)
         if(warn_not_implemented){
             console.log("create not implemented");
         }
